@@ -1,0 +1,254 @@
+body{
+    /* Margen predeterminado de las paginas web */
+    margin: 0;
+    /* "Margen" pa' dentro */
+    padding: 0;
+    /* tamano de fuente */
+    font-size: 12px;
+    /* Fuente de texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************************************************************************* */
+/* ******************************************************************** */
+/* ********************************************************** */
+/* ************ NAVEGACION ***** */
+
+header{
+    /* width: anchura // height: altura */
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    display: flex;
+    /* Mover mi nav hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* Eliminar vinetas */
+    list-style:none;
+    width: 250px;
+    /* Hacemos el elemento flexible */
+    display: flex;
+    /* Centramos */
+    justify-content: space-between;
+    /* Centrado vertical */
+    align-items: center;
+    height: auto;
+}
+
+nav .nav-right-section a {
+    /* Quitar delineado // linea */
+    text-decoration: none;
+    /* color de texto */
+    color: rgba(0, 0, 0, .87);
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Tamaño de imagen de fondo -- contenida */
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+nav .nav-right-section img{
+    /* Margin right // margen derecho y hacer espacio a la foto */
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    max-width: 100%;
+    border-radius: 100%;
+}
+header .nav-right-section a:hover{
+    text-decoration: underline;
+}
+
+/* ************************************************************************* */
+/* ******************************************************************** */
+/* ********************************************************** */
+/* ************ MAIN ***** */
+
+main {
+    /* margin superior */
+    margin-top: 220px;
+    /* Centrar elementos */
+    text-align: center;
+}
+
+main .main-logo {
+    width: 500px;
+    /* PROPIEDAD : VALOR1 VALOR2 */
+    /* PROPIEDAD : VERTICAL HORIZONTAL */
+    /* CENTRAR MI ELEMENTO */
+    margin: 0 auto;
+    /* top | right | bottom | left */
+    /* margin: 2px 1em 0 auto; */
+    margin-bottom: 40px;
+}
+
+main .main-logo img {
+    /* Editar tamaño de la imagen */
+    height: 92px;
+}
+
+/* INPUT SECTION */
+main .main-input {
+    /* anchura */
+    width: 530px;
+    /* CENTRAR MI ELEMENTO */
+    margin: 0 auto;
+    /* Agregar margen inferior */
+}
+
+main .main-input-container{
+    width: 500px;
+    /* BORDE DE COLOR: ANCHURA DE LÍNEA, ESTILO, COLOR  */
+    border: 1px solid #dfe1e5;
+    border-radius: 35px;
+}
+
+main .main-input input {
+    height: 45px;
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    /*   PARA QUE NO SE REPITA EL ÍCONO */
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+main .main-input-container:hover {
+box-shadow: 0 1px 6px #a7afbd;
+    border-color: #dfe1e500;
+}
+
+/* MAIN BUTTONS SECTION */
+main .main-buttons {
+    /* anchura */
+    width: 550px ;
+    /* Vertical ~ Horizontal */
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    /* Alinear elementos en la misma línea */
+    display: inline;
+}
+
+main .main-buttons button {
+    /* SEPARACIÓN ENTRE BUSCADOR Y BOTONES */
+    margin-top: 30px;
+    /* Eliminar borde negro -- NONE or 0px */
+    border: none;
+    height: 40px;
+    background-color: #f8f9fa;
+    /* Color de texto */
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /* borde + oscuro al pasar mouse */
+    border: 1px solid #dadce0;
+    /* Sombra al pasar mouse */
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+}
+
+/* ************************************************************************* */
+/* ******************************************************************** */
+/* ********************************************************** */
+/* ************ FOOTER ***** */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    padding: 15px 30px;
+    font-family: arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+footer .mexico-container {
+    font-size: 16px;
+    color: #313333;
+    margin-bottom: 5px;
+}
+  
+footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
+  
+footer .footer-left, .footer-right {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+  
+footer .footer-left li, .footer-right li {
+    margin-right: 27px;
+}
+  
+footer .footer-left a, .footer-right a {
+    color: #313333;
+    text-decoration: none;
+}
+  
+footer .footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+  
+footer .footer-bar {
+    height: 1px;
+    width: 100%;
+    background-color: #dadce0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
